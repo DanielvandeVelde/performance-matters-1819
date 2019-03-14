@@ -8,12 +8,34 @@ Bestanden worden kleiner, afbeeldingen geoptimaliseerd en veel meer interessante
 
 ## Inhoudsopgave
 
-1. [Week 1](#1-Week-1)
-2. [Installeren](#2-Installeren)
+1. [Installeren](#1-Installeren)
+2. [Todo](#2-Todo)
+2. [Week 1](#3-Week-1)
 
 [Bronnen](#Bronnen)
 
-## 1. Week 1
+## 1. Installeren
+
+Het makkelijkste is om deze repository te forken en vervolgens:  
+```
+npm install
+npm start # server draait op `localhost:3000`
+```
+
+## 2. Todo
+
+- [x] Opzetten van een server
+- [x] Prototype laten dx
+- [x] Pug leren
+- [x] Audit uitvoeren
+- [x] Performance verbeteren via audit
+- [x] Compression
+- [ ] API calls server side maken
+- [ ] NPM script voor minify/uglify
+- [ ] Service worker
+- [ ] Andere leuke dingen
+
+## 3. Week 1
 
 Het opzetten van een Node.js & Express server heb ik gelukkig al eens eerder gedaan.  
 Met deze eerder ervaring was het niet een grote klus om dit weer te doen, al heb ik zeker weer even een aantal dingen op moeten zoeken.  
@@ -30,14 +52,6 @@ Oud:
 
 Nieuw:  
 ![Na veranderingen](https://github.com/DanielvandeVelde/performance-matters-1819/blob/master/after%20audit.png "Na veranderingen")
-
-## 2. Installeren
-
-Het makkelijkste is om deze repository te forken en vervolgens:  
-```
-npm install
-npm start # server draait op `localhost:3000`
-```
 
 ## Bronnen
 [oba-trophy](https://github.com/DanielvandeVelde/project-1-1819/)
