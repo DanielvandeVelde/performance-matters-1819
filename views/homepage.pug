@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang='nl')
   head
     title #{title}
     link(rel='stylesheet', href='/css/reset.css')
@@ -9,6 +9,11 @@ html
     main
       h1 Jij verdient een #{ding}!
       p#para
+        Heb jij vandaag een boek uitgelezen?
+        br
+        | Dan verdien jij een trofee!
+        br
+        | Deze trofee kan je printen in de oba 🙂
       form#form
         ul
           li
@@ -25,4 +30,4 @@ html
     script(src='/js/three.js/TrackballControls.js')
     script(src='/js/three.js/OBJLoader.js')
     script(src='/js/three.js/STLExporter.js')
-    script(src='/js/script.js' type='module')
+    script(rel='preload' src='/js/script.js' type='module')

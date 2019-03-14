@@ -1,54 +1,48 @@
-# Performance Matters @cmda-minor-web · 2018-2019
+# Performance Matters
 
-In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.
+## Inleiding
 
-## Leerdoelen
-- _Je weet het verschil tussen client side en server side rendering en kan server side rendering toepassen_
-- _Je begrijpt hoe de critical render path werkt, en hoe je deze kan optimaliseren voor een betere runtime en/of perceived performance._
-- _Je begrijpt hoe een Service Worker werkt en kan deze in jou applicatie implementeren._
+Dit is soort van een fork van [oba-trophy](https://github.com/DanielvandeVelde/project-1-1819/) waarbij 'Performance Matters'.  
+Dit betekend dat ik mij de komende tijd richt op het omzetten van mijn oba-trophy project en deze server-side maak.  
+Bestanden worden kleiner, afbeeldingen geoptimaliseerd en veel meer interessante dingen.  
 
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTO-pc2UMvpT0pUjt6NJeckc5N9E7QvCxEfVJW1JjuM0m_9MM8ra05J0s6br486Rocz5JVMhAX_C37_/pubhtml?gid=0&single=true)
+## Inhoudsopgave
 
-## Lesprogramma
+1. [Demo](#1-Week-1)
+2. [Install](#2-Install)
+3. [Fork](#3-Fork)
 
-### Week 1 - Server Side rendering
+[Sources](#Sources)
 
-Doel: Webpagina's server side renderen
+## 1. Week 1
 
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md)
+Het opzetten van een Node.js & Express server heb ik gelukkig al eens eerder gedaan.  
+Met deze eerder ervaring was het niet een grote klus om dit weer te doen, al heb ik zeker weer even een aantal dingen op moeten zoeken.  
+Mijn core functionaliteiten waren vrijwel volledig client-side, met de API call die clients-side gebeurde net zoals het renderen van de trofee.  
+Ik ben daarom begonnen met het uitzoeken van [Pug](https://pugjs.org/).  
+Dit had ik nog nooit eerder gebruikt en was dus erg leuk om uit te zoeken en te proberen.    
 
-[Slides](...)
+Ik heb een NPM script start aangemaakt, meer was niet nodig.
+Verder heb ik onder het mom van performance compression zowel als een minifier toegepast.  
+Tot slot heb ik text-compression toegevoegd en alle afbeeldingen vervangen door svg of Base64.
 
-### Week 2 - Critical Rendering Path  
+Oud:
+![Voor veranderingen](https://github.com/Danielvandevelde/performance-matters-1819/raw/master/before audit.png "Voor veranderingen")
 
-Doel: Critical Rendering path optimaliseren
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-2.md)
+Nieuw:
+![Na veranderingen](https://github.com/Danielvandevelde/performance-matters-1819/raw/master/after audit.png "Na veranderingen")
 
-[Slides](...)
+## 2. Installeren
 
-### Week 3 - Going Offline 
+Het makkelijkste is om deze repository te forken en vervolgens:  
+```
+npm install
+npm start # server draait op `localhost:3000`
+```
 
-Doel: Webpagina's offline beschikbaar stellen
-
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-3.md)
-
-[Slides](...)
-
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- Add a nice image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+## Bronnen
+[oba-trophy](https://github.com/DanielvandeVelde/project-1-1819/)
+[OBA-API](https://zoeken.oba.nl/?uilang=en)   
+[OBA-Wrapper](https://github.com/maanlamp/OBA-wrapper)   
+[THREE.js](https://github.com/mrdoob/three.js/)   
+[Trophy Cup 5 - Updated 8.4.2014](https://www.thingiverse.com/thing:245340)

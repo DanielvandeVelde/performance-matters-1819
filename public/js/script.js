@@ -2,7 +2,7 @@ import API from "./api/index.js";
 var group = new THREE.Object3D();
 
 (() => {
-  console.log("🏆oba trophy v1.0🏆");
+  console.log("🏆oba trophy v1.1🏆");
   let letsGo = document.getElementById("form");
   letsGo.addEventListener("submit", function(e) {
     e.preventDefault();

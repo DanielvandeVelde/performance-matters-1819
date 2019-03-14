@@ -14,11 +14,11 @@ Er is 12 uur ingeroosterd om deze week zelfstandig aan de opdrachten van dit vaa
 
 ### Opdracht 1: Pas de OBA app aan naar een server side versie met Node.js & Express
 
-Denk bij het aanpassen goed na over wat de MVP (of core functionaliteit) is van de OBA app. Over het algemeen is dat een overview page, met een lijstje met items die elk door linken naar een detail page. Zorg ervoor dat je eerst de HTML genereert vanaf de server, vervolgens kijk je in hoeverre je de CSS kan aanpassen, en tenslotte probeer je de app zoveel mogelijk te enhancen met client side JavaScript. 
+Denk bij het aanpassen goed na over wat de MVP (of core functionaliteit) is van de OBA app. Over het algemeen is dat een overview page, met een lijstje met items die elk door linken naar een detail page. Zorg ervoor dat je eerst de HTML genereert vanaf de server, vervolgens kijk je in hoeverre je de CSS kan aanpassen, en tenslotte probeer je de app zoveel mogelijk te enhancen met client side JavaScript.
 
 Fork deze repo, en werk daar je server side app uit: [Performance Matters 1819](https://github.com/cmda-minor-web/performance-matters-1819)
 
-Documenteer in je readme.md hoe je de server draaiend krijgt; git clone && npm start 
+Documenteer in je readme.md hoe je de server draaiend krijgt; git clone && npm start
 
 #### Resources
 * [Introduction to Node.js](https://egghead.io/courses/introduction-to-node-the-fundamentals)
@@ -28,14 +28,10 @@ Documenteer in je readme.md hoe je de server draaiend krijgt; git clone && npm s
 
 ### Opdracht 2: Tooling
 
-Installeer en implementeer de tooling voor je app. Je kan hierbij kiezen hierbij voor bijvoorbeeld een workflow met NPM scripts, CommonJS en Browserify.
+Aangezien ik niet echt gebruik maak van modules zijn vele tools overbodig.  
+Momenteel gebruik ik enkel een NPM run scriptje.  
 
-Documenteer in je readme.md hoe jij de build heb geïmplementeerd
-
-#### Resources
-[Introduction to NPM scripts](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633)
-
-### Opdracht 3: Universal / Isomorphic app (extra) 
+### Opdracht 3: Universal / Isomorphic app (extra)
 
 Met de komst van Node.js is het mogelijk om JavaScript op de server te runnen. Een Universal of Isomorphic app is een app waarvan (een gedeelte van) de code zowel op de client als op de server kan worden gebruikt. Probeer van jouw app een universal app te maken.
 
