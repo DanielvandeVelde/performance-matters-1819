@@ -8,11 +8,10 @@ Bestanden worden kleiner, afbeeldingen geoptimaliseerd en veel meer interessante
 
 ## Inhoudsopgave
 
-1. [Demo](#1-Week-1)
-2. [Install](#2-Install)
-3. [Fork](#3-Fork)
+1. [Week 1](#1-Week-1)
+2. [Installeren](#2-Installeren)
 
-[Sources](#Sources)
+[Bronnen](#Bronnen)
 
 ## 1. Week 1
 
@@ -26,11 +25,11 @@ Ik heb een NPM script start aangemaakt, meer was niet nodig.
 Verder heb ik onder het mom van performance compression zowel als een minifier toegepast.  
 Tot slot heb ik text-compression toegevoegd en alle afbeeldingen vervangen door svg of Base64.
 
-Oud:
-![Voor veranderingen](https://github.com/Danielvandevelde/performance-matters-1819/raw/master/before audit.png "Voor veranderingen")
+Oud:  
+![Voor veranderingen](https://github.com/DanielvandeVelde/performance-matters-1819/blob/master/before%20audit.png "Voor veranderingen")
 
-Nieuw:
-![Na veranderingen](https://github.com/Danielvandevelde/performance-matters-1819/raw/master/after audit.png "Na veranderingen")
+Nieuw:  
+![Na veranderingen](https://github.com/DanielvandeVelde/performance-matters-1819/blob/master/after%20audit.png "Na veranderingen")
 
 ## 2. Installeren
 
