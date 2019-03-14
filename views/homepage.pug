@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/reset.css')
+    link(rel='stylesheet', href='/css/styles.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    main
+      h1 Jij verdient een #{ding}!
+      p#para
+      form#form
+        ul
+          li
+            label(for='namefield') Naam
+            input#namefield(type='text' name='namefield' maxlength='20' required)
+            span Alleen je voornaam is het makkelijkst
+          li
+            label(for='bookfield') Boektitel
+            input#bookfield(type='text' name='bookfield' maxlength='20' required)
+            span Gedeeltelijke titel mag ook
+          li
+            input#go(type='submit' value='ophalen')
+    script(src='/js/three.js/three.min.js')
+    script(src='/js/three.js/TrackballControls.js')
+    script(src='/js/three.js/OBJLoader.js')
+    script(src='/js/three.js/STLExporter.js')
+    script(src='/js/script.js' type='module')
