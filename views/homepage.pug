@@ -9,7 +9,7 @@ html(lang='nl')
     main
       h1 Jij verdient een #{ding}!
       p#para
-        Heb jij vandaag een boek uitgelezen?
+        | Heb jij vandaag een boek uitgelezen?
         br
         | Dan verdien jij een trofee!
         br
@@ -25,7 +25,7 @@ html(lang='nl')
             input#bookfield(type='text' name='bookfield' maxlength='20' required)
             span Gedeeltelijke titel mag ook
           li
-            input#go(type='submit' value='ophalen')
+            input#go(type='submit' value='Ophalen')
     script(src='/js/three.js/three.min.js')
     script(src='/js/three.js/TrackballControls.js')
     script(src='/js/three.js/OBJLoader.js')
