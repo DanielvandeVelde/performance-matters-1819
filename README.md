@@ -12,9 +12,30 @@ Bestanden worden kleiner, afbeeldingen geoptimaliseerd en veel meer interessante
 2. [Install](#2-Installeren)
 3. [Todo](#3-Todo)
 
-[Sources](#Sources)
+[Bronnen](#Bronnen)
 
-## 1. Week 1
+## 1. Installeren
+
+Het makkelijkste is om deze repository te forken en vervolgens:  
+```
+npm install
+npm start # server draait op `localhost:3000`
+```
+
+## 2. Todo
+
+- [x] Opzetten van een server
+- [x] Prototype laten dx
+- [x] Pug leren
+- [x] Audit uitvoeren
+- [x] Performance verbeteren via audit
+- [x] Compression
+- [ ] API calls server side maken
+- [ ] NPM script voor minify/uglify
+- [ ] Service worker
+- [ ] Andere leuke dingen
+
+## 3. Week 1
 
 Het opzetten van een Node.js & Express server heb ik gelukkig al eens eerder gedaan.  
 Met deze eerder ervaring was het niet een grote klus om dit weer te doen, al heb ik zeker weer even een aantal dingen op moeten zoeken.  
@@ -26,19 +47,11 @@ Ik heb een NPM script start aangemaakt, meer was niet nodig.
 Verder heb ik onder het mom van performance compression zowel als een minifier toegepast.  
 Tot slot heb ik text-compression toegevoegd en alle afbeeldingen vervangen door svg of Base64.
 
-Oud:
-![Voor veranderingen](https://github.com/Danielvandevelde/performance-matters-1819/raw/master/before audit.png "Voor veranderingen")
+Oud:  
+![Voor veranderingen](https://github.com/DanielvandeVelde/performance-matters-1819/blob/master/before%20audit.png "Voor veranderingen")
 
-Nieuw:
-![Na veranderingen](https://github.com/Danielvandevelde/performance-matters-1819/raw/master/after audit.png "Na veranderingen")
-
-## 2. Installeren
-
-Het makkelijkste is om deze repository te forken en vervolgens:  
-```
-npm install
-npm start # server draait op `localhost:3000`
-```
+Nieuw:  
+![Na veranderingen](https://github.com/DanielvandeVelde/performance-matters-1819/blob/master/after%20audit.png "Na veranderingen")
 
 ## 3. Todo
 
@@ -48,8 +61,8 @@ Als eerste denk ik te werken om de applicatie te splitsen in twee routes.
 Op deze manier kan ik de formulier submit laten werken als een route naar een andere pagina.  
 Dan is er ook geen javascript nodig om alles in een enkele pagina te laden.    
 Vervolgens kan met de formulier data serverside de api call worden gedaan.  
-Daarna moet ik serverside three.js renderen, hier een afbeelding van maken en deze in een andere pagina te renderen.  
-Vervolgens kan ik met javascript deze afbeelding vervangen tot een `<canvas>` element en deze met javascript door de gebruiker laten besturen.
+Daarna moet ik serverside three.js renderen, hier een afbeelding van maken en deze in een andere pagina te renderen. Dit is namelijk mijn fallback.
+Vervolgens kan ik met javascript deze afbeelding vervangen tot een `<canvas>` element en deze met javascript door de gebruiker laten besturen. Zo is er altijd en fallback aanwezig, of javascript als de gebruiker dit kan laden.  
 Voor het downloaden van het trofee-object/het .stl bestand moet is er nog een andere workaround nodig.
 
 ## Bronnen
